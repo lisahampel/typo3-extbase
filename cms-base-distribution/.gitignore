@@ -1,12 +1,75 @@
-.DS_Store
+# Created by .ignore support plugin (hsz.mobi)
+### Composer template
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+### Example user template template
+### Example user template
+
+# IntelliJ project files
 .idea
-nbproject
-/var/*
-!/var/labels
-/vendor
-/public/*
-!/public/.htaccess
-!/public/typo3conf
-/public/typo3conf/*
-!/public/typo3conf/LocalConfiguration.php
-!/public/typo3conf/AdditionalConfiguration.php
+*.iml
+out
+gen### macOS template
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### TYPO3 CMS
+/var
+# Ignore several upload and file directories.
+/uploads/
+/public/assets/
+/public/uploads/
+# Ignore cache
+/public/typo3conf/deprecation_*.log
+/public/typo3conf/ENABLE_INSTALL_TOOL
+/public/typo3conf/LocalConfiguration.php
+/public/typo3conf/PackageStates.php
+/public/FIRST_INSTALL
+# Ignore system folders, you should have them symlinked.
+# If not comment out the following entries.
+/public/typo3
+/public/typo3_src
+/public/typo3_src-*
+#**/.htaccess
+/public/index.php
+/public/typo3conf/ext/*
+# Ignore temp directory.
+/public/typo3temp/
+
+# Dotenv
+.env
+.env.test
+
+# customs
+LOCK_DRAWING_IMPORT
+.php-cs-fixer.cache
+tools/php-cs-fixer
